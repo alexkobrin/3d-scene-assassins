@@ -1,7 +1,7 @@
 /* USER VARIABLES SECTION */
 
 :root {
-	--accent: orange;
+	--accent: #cc8869;
 	--text: #333;
 	--regular-text: 16px;
 	--lineheight: 1.65;
@@ -21,6 +21,7 @@
 @font-face { src: url("../fonts/roboto-italic-webfont.woff2") format("woff2"); font-family: "roboto-st"; font-weight: 400; font-style: italic; }
 @font-face { src: url("../fonts/roboto-bold-webfont.woff2") format("woff2"); font-family: "roboto-st"; font-weight: 700; font-style: normal; }
 @font-face { src: url("../fonts/roboto-bolditalic-webfont.woff2") format("woff2"); font-family: "roboto-st"; font-weight: 700; font-style: italic; }
+@font-face { src: url("../fonts/assassin.woff2") format("woff2"); font-family: "assassin"; font-weight: 700; font-style: italic; }
 
 /* GENERAL CSS SETTINGS */
 
@@ -40,15 +41,24 @@ body {
 	overflow-x: hidden;
 }
 
-/* USER STYLES */
-
-.image {
-	max-width: 100%;
-	margin-bottom: var(--bs-gutter-x);
-	border-radius: 4px;
+body,html {
+	height: 100%;
+}
+.showcase {
+	background-color: #000;
+	height: 100%;
+	position: relative;
+	color: #fff;
+	overflow: hidden;
+}
+.showcase__video {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	opacity: .5;
 }
 
-.accent {
-	color: var(--accent);
-	font-weight: bold;
-}
+ 
